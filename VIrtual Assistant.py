@@ -15,7 +15,7 @@ import json
 
 def send_data_thingspeak(Code):
     fieldid='1'
-    writekey='U6DEUI2SRWRL9WHW'
+    writekey=''
     code=str(Code)
     baseURL = 'http://api.thingspeak.com/update?api_key='+writekey+'&field'+fieldid+'='
     f = urlopen(baseURL+code)	
